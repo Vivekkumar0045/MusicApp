@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Madimi+One&display=swap');
+
+
+
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    /* border: 1px solid white; */
+    border-radius: 9px;
+    width: 25vw;
+    height: 100vh;
+    margin: 5px;
+    background-color: rgb(33, 31, 31);
+    fill-opacity: 50%;
+    height: 200vh;
+}
+
+.right {
+    width: 75vw;
+    /* border: 1px solid white; */
+    margin: 5px;
+    border-radius: 9px;
+    background-color: rgb(33, 31, 31);
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 85vh;
+    margin: 3px;
+}
+
+/* .home :first-child{
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid white;
+
+
+
+}
+.home :nth-child(2){
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid white;
+}
+
+.home :nth-child(3){
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid white;
+}*/
+.home {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0.5rem;
+
+}
+
+.limg img {
+    height: 10px;
+    width: 10px;
+    justify-content: center;
+    padding-top: 2.5%;
+
+}
+
+.home img {
+    height: 3rem;
+    width: 3rem;
+    padding-top: 2.5%;
+}
+
+.limg {
+    width: 22vw;
+    /* border: 0.5px solid white; */
+    border-radius: 8px;
+    padding: 2px;
+    padding-left: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    box-shadow: 10cm;
+
+
+
+}
+
+.logo {
+    width: 22vw;
+
+    padding: 0.5rem;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8rem;
+}
+.logo img{
+    height: 30px;
+    aspect-ratio: 3/2;
+    margin: 0;
+    margin-top: 9px;
+    width: 30px;
+
+
+}
+
+.logoname {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    padding-left: 6%;
+    font-size: 22px;
+
+}
+
+.lcat {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    padding-left: 6%;
+    font-size: 18px;
+    font-weight: 50;
+
+}
+
+.homebtn img {
+    height: 30px;
+    width: 30px;
+    padding-top: 4%;
+}
+
+.search img {
+    height: 30px;
+    width: 30px;
+    padding-top: 4%;
+}
+
+.top-artist {
+    width: 22vw;
+    /* border: 0.5px solid white; */
+    border-radius: 8px;
+    padding: 2px;
+    padding-left: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    box-shadow: 10cm;
+    height: 150vh;
+}
+
+
+
+.play {
+    /* border: 2px solid green; */
+    justify-content: center;
+    margin: auto;
+    display: inline-block;
+}
+
+.play img {
+    /* border: 2px solid red; */
+    justify-content: center;
+
+    display: inline-block;
+    margin-left: 30px;
+
+}
+
+.class-in {
+    color: white;
+    width: 50vw;
+    height: 5px;
+
+}
+
+.play :nth-child(1) {
+    transform: rotate(180deg);
+
+}
+
+.play :nth-child(2) {
+    width: 30px;
+}
+
+.column {
+    /* border: 2px solid green; */
+    height: 25vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.album {
+    /* border: 2px solid red; */
+    min-height: 90%;
+    width: 25vw;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-self: flex-end;
+    align-items: flex-end;
+    align-content: flex-end; */
+    box-shadow: 5px 5px 5px black, 10px -10px 20px rgb(0, 0, 0) inset;
+    border: 0.5px solid rgb(78, 76, 76);
+}
+
+.photo {
+    height: 60%;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.paymusic {
+    width: 40px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    height: 6opx;
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+    background-color: red;
+}
+
+.m1 {
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: start;
+    justify-content: end;
+    right: 0;
+    bottom: 0;
+    /* box-shadow: 10px -10px 20px rgb(0, 0, 0) inset; */
+    /* margin: 5px; */
+    border-radius: 5px;
+
+
+
+}
+
+.m1:hover {
+    /* box-shadow:0 0  50px rgb(0, 0, 0) inset; */
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    cursor: pointer;
+
+}
+
+.musicname {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    text-shadow: 3px 3px 5px black;
+}
+
+.artistname {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    text-shadow: 10px rgb(0, 0, 0);
+    text-shadow: 3px 3px 5px black;
+}
+.a1{
+    background-image: url("Assets/softly.jpg");
+}
+ .a2{
+    background-image: url("Assets/2img.jpg");
+ }
+
+ .a3{
+    background-image: url("Assets/3img.jpg");
+ }
+
+ .a4{
+    background-image: url("Assets/4img.jpg");
+ }
+ /* #a4{
+    background-image: url("Assets/5img.jpg");
+ } */
+ .a5{
+    background-image: url("Assets/5img.jpg");
+ }
+ .b1{
+    background-image: url("Assets/6img.jpg");
+ }
+ .b2{
+    background-image: url("Assets/7img.jpg");
+ }
+ .b3{
+    background-image: url("Assets/8img.jpg");
+ }
+ .b4{
+    background-image: url("Assets/9img.jpg");
+ }
+ .b5{
+    background-image: url("Assets/f18cpg-mTrY-MQ.jpg");
+ }
+ .c1{
+    background-image: url("Assets/11img.jpg");
+ }
+ .c2{
+    background-image: url("Assets/12img.jpg");
+ }
+ .c3{
+    background-image: url("Assets/13img.jpg");
+ }
+ .c4{
+    background-image: url("Assets/14img.jpg");
+ }
+ .c5{
+    background-image: url("Assets/15img.jpg");
+ }
+ .d1{
+    background-image: url("Assets/16img.jpg");
+ }
+ .d2{
+    background-image: url("Assets/17img.jpg");
+ }
+ .d3{
+    background-image: url("Assets/18img.jpg");
+ }
+ .d4{
+    background-image: url("Assets/19img.jpg");
+ }
+ .d5{
+    background-image: url("Assets/20img.jpg");
+ }
+ .e1{
+    background-image: url("Assets/21img.jpg");
+ }
+ .e2{
+    background-image: url("Assets/22img.jpg");
+ }
+ .e3{
+    background-image: url("Assets/23img.jpg");
+ }
+ .e4{
+    background-image: url("Assets/24img.jpg");
+ }
+.e5{
+    background-image: url("Assets/25img.jpg");
+ }
+
+
+ .fav-artist{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+ }
+
+ .fav-name{
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+
+ }
+ .fav-img{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    margin: 5px;
+    height: 44px;
+    padding: 3px;
+    border-radius: 20px;
+
+ }
+ .fav-img img{
+    border-radius:100%;
+    /* border: 1px solid green; */
+    background-position: top top;
+    background-size: cover;
+    background-color: white;
+    height: 35px;
+    width: 40px;
+    
+   
+ }
+ .fav-name{
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+   /* padding-bottom: 15px;
+   padding-top: 1px; */
+   margin-bottom: 5px;
+   margin-top: 10px;
+   padding: 0;
+
+ }
+ .limg:hover{
+    background-color: rgb(42, 41, 41);
+    
+ }
+ .fav-img:hover{
+    background-color: rgb(39, 38, 38);
+ }
+ .music-player {
+    /* position: fixed; */
+    height: 15vh;
+    /* border: 2px solid red; */
+    display: flex;
+    width: 99vw;
+    bottom: 0px;
+    /* justify-content: center center; */
+    position: fixed;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 3;
+    background-color: black;
+    /* align-items: center; */
+    flex-direction: column;
+    border-radius: 3px;
+    border: 1px solid rgb(55, 55, 55);
+    background-image: linear-gradient(black, rgb(29, 29, 29), black);
+
+}
+ .music-player audio{
+    margin: auto;
+ }
+ .progressbar{
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    background-color: white;
+    height: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+
+ }
+ .progressbar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgb(95, 94, 94);
+    border: 7px rgb(77, 77, 77);
+
+ }
+ .controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ .controls div{
+    margin: 25px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    justify-content: center;
+
+ }
+ .controls div:hover{
+    filter: invert(85%);
+    /* box-shadow: 2px 2px 5px rgb(39, 38, 38); */
+    cursor: pointer;
+    transform: scale(1.22x);
+
+ }
+ .gif img{
+   height: 35px;
+   width: 35px;
+   filter: invert(100%);
+ }
+ .songinfo{
+   display: flex;
+   flex-direction: row;
+ }
+ input{
+   width: 100%;
+   padding: 2px;
+   background-color: rgb(39, 39, 39);
+   border: 0px;
+   border-bottom: 1px solid grey;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 25px;
+   color: white;
+   
+ }
+ 
+ 
+
+
+
+ option{
+color: red;
+
+ }
