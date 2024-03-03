@@ -121,7 +121,9 @@ body {
 .logoname {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     padding-left: 6%;
-    font-size: 22px;
+    font-size: 25px;
+    justify-self: center;
+    align-self: center;
 
 }
 
@@ -504,7 +506,18 @@ body {
    .right{
       right: 10px;
    }
+   .logo2{
+      visibility: visible;
+      height: 5vh;
+   }
  }
+ @media only screen and (min-width:500px){
+   .logo2{
+      visibility: hidden;
+      height: 0;
+ }
+}
+
  
  .controls div{
    transform: scale(2);
@@ -515,3 +528,25 @@ body {
 color: red;
 
  }
+ .logo2{
+   width: 100vw;
+  
+   display: flex;
+   flex-direction: row;
+   margin: 7px;
+   margin-bottom: 15px;
+   border-bottom: 1px solid white;
+   padding: 5px;
+   
+
+ }
+ .logo2 img{
+   width: 40px;
+   height: 40px;
+   
+   margin-bottom: 0;
+ }
+ .playlistname{
+   margin-top: 10px;
+ }
+ 
