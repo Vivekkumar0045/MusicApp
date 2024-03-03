@@ -156,5 +156,17 @@ window.addEventListener("keydown", function (e) {
         e.preventDefault();
     }
 
-})
+});
+window.onload = function(){
 
+const menu_btn = document.querySelector(".hamburger");
+const mobile_menu = document.querySelector(".mobile-left");
+const menu = document.querySelector(trigger.dataset.menu);
+
+menu_btn.addEventListener('click',function(){
+
+    menu_btn.classList.toggle("is-active");
+    mobile_menu.classList.toggle("active");
+
+})
+}

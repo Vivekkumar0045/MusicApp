@@ -10,6 +10,9 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+
 }
 
 .left {
@@ -27,6 +30,7 @@ body {
     width: max-content;
     /* border: 1px solid white; */
     margin: 5px;
+    margin-top: 0;
     border-radius: 9px;
     background-color: rgb(33, 31, 31);
     height: 200vh;
@@ -39,6 +43,7 @@ body {
     flex-direction: row;
     height: 85vh;
     margin: 3px;
+    margin-top: 0;
 }
 
 /* .home :first-child{
@@ -84,7 +89,7 @@ body {
 }
 
 .limg {
-    width: 22vw;
+    width: 21rem;
     /* border: 0.5px solid white; */
     border-radius: 8px;
     padding: 2px;
@@ -100,7 +105,7 @@ body {
 }
 
 .logo {
-    width: 22vw;
+    width: 21rem;
 
     padding: 0.5rem;
     margin: 5px;
@@ -112,7 +117,7 @@ body {
     height: 30px;
     aspect-ratio: 3/2;
     margin: 0;
-    margin-top: 9px;
+    
     width: 30px;
 
 
@@ -148,7 +153,7 @@ body {
 }
 
 .top-artist {
-    width: 22vw;
+    width: 21rem;
     /* border: 0.5px solid white; */
     border-radius: 8px;
     padding: 2px;
@@ -363,7 +368,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     margin-left: 5px;
     margin-top: 5px;
-    margin-bottom: 50px;
+    
  }
 
  .fav-name{
@@ -415,7 +420,7 @@ body {
     height: 15vh;
     /* border: 2px solid red; */
     display: flex;
-    width: 99vw;
+    width: 101vw;
     bottom: 0px;
     /* justify-content: center center; */
     position: fixed;
@@ -505,16 +510,46 @@ body {
    }
    .right{
       right: 10px;
+      margin-left: 0;
    }
    .logo2{
       visibility: visible;
       height: 5vh;
+   }
+   .container{
+      margin-left: 0;
+   }
+   .column{
+      margin-left: 1px;
+   }
+   .mobile-left{
+      visibility: visible;
+      width: 85vw;
+   }
+   .top-artist{
+      padding-top: 50px;
+   }
+   .fav-artist{
+      padding-bottom: 15px;
+   }
+   .logo img{
+      padding-top: 23px;
    }
  }
  @media only screen and (min-width:500px){
    .logo2{
       visibility: hidden;
       height: 0;
+ }
+ .mobile-left{
+   visibility: hidden;
+   width: 0;
+ }
+ .fav-artist{
+   margin-bottom: 50px;
+ }
+ .logo img{
+   margin-top: 9px;
  }
 }
 
@@ -529,7 +564,7 @@ color: red;
 
  }
  .logo2{
-   width: 100vw;
+   width: 110vw;
   
    display: flex;
    flex-direction: row;
@@ -537,7 +572,12 @@ color: red;
    margin-bottom: 15px;
    border-bottom: 1px solid white;
    padding: 5px;
-   
+   justify-content: space-evenly;
+   position: fixed;
+   margin-left: 0;
+   background-image: linear-gradient(black,rgb(45, 44, 44));
+   margin-top: 0;
+   left: 0;
 
  }
  .logo2 img{
@@ -545,8 +585,91 @@ color: red;
    height: 40px;
    
    margin-bottom: 0;
+   
  }
  .playlistname{
    margin-top: 10px;
  }
  
+
+ .hamburger{
+   position: relative;
+   display: block;
+   width: 35px;
+   cursor: pointer;
+   appearance: none;
+   background: none;
+   outline: none;
+   border: none;
+   align-self: flex-end;
+   justify-self: flex-end;
+   
+
+ }
+
+ .hamburger .bar, .hamburger:after, .hamburger:before{
+   content: '';
+   display: block;
+   width: 100%;
+   height: 5px;
+   background-color: white;
+   margin: 6px 0px;
+   transition: 0.4s;
+
+ }
+
+ .hamburger  .is-active:before{
+   transform: rotate(-45deg) translate(-8px 6px);
+
+ }
+
+ .hamburger .is-active:after{
+   transform: rotate(45deg) translate(-9px -8px);
+
+ }
+ /* .hamburger .is-active .bar{
+   opacity: 0;
+
+ } */
+ .mobile-left {
+   /* border: 1px solid white; */
+   border-radius: 9px;
+   
+   
+   margin: 5px;
+   margin-top: 20px;
+   background-color: rgb(33, 31, 31);
+   fill-opacity: 50%;
+   height: 85vh;
+   z-index: 98;
+   position: fixed;
+   margin-bottom: 20px;
+   transition: 0.4s;
+   left: 100%;
+   margin-left: 20px;
+   border: 2px solid rgb(78, 78, 78);
+}
+.home-left{
+
+   display: flex;
+   flex-direction: column;
+   padding: 0px;
+   margin: 0.5rem;
+   
+}
+.active{
+   left: 0%;
+}
+.top-artist-mobile{
+   width: 21rem;
+   /* border: 0.5px solid white; */
+   border-radius: 8px;
+   padding: 2px;
+   padding-left: 10px;
+   margin: 5px;
+   display: flex;
+   flex-direction: column;
+   background-color: black;
+   box-shadow: 10cm;
+   height: 35vh;
+}
