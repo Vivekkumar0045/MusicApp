@@ -127,6 +127,15 @@ body {
     flex-direction: row;
     /* margin-bottom: 8rem; */
 }
+.logo-mobile{
+   width: 21rem;
+
+    /* padding: 0.5rem; */
+    /* margin: 5px; */
+    display: flex;
+    flex-direction: row;
+    /* margin-bottom: 8rem; */
+}
 .logo img{
     height: 30px;
     aspect-ratio: 3/2;
@@ -140,6 +149,19 @@ body {
     margin-bottom: 9px;
 
 
+}
+.logo-mobile img{
+   height: 30px;
+   aspect-ratio: 3/2;
+   
+   
+   width: 30px;
+   align-self: center;
+   justify-self: center;
+   padding: 0;
+   margin: auto;
+   margin-right: 10px;
+   margin-left: 15px;
 }
 
 .logoname {
@@ -548,7 +570,7 @@ body {
    }
    .mobile-left{
       visibility: visible;
-      width: 85vw;
+      width: 90vw;
    }
    .top-artist{
       padding-top: 50px;
@@ -630,6 +652,7 @@ color: red;
    align-self: center;
    justify-self: center;
    
+   
 
  }
 
@@ -642,6 +665,9 @@ color: red;
    margin: 6px 0px;
    transition: 0.4s;
 
+ }
+ .is-active{
+   z-index: 99;
  }
 
  .hamburger  .is-active:before{
@@ -664,16 +690,19 @@ color: red;
    
    margin: 5px;
    margin-top: 20px;
-   background-color: rgb(33, 31, 31);
+   background-color: rgb(9, 9, 9);
    fill-opacity: 50%;
-   height: 85vh;
+   height: 75vh;
    z-index: 98;
    position: fixed;
    margin-bottom: 20px;
    transition: 0.4s;
    left: 100%;
    margin-left: 20px;
-   border: 2px solid rgb(78, 78, 78);
+   /* border: 2px solid rgb(78, 78, 78); */
+   opacity: 0.9;
+   /* padding-top: 20vh; */
+   top: 10vh;
 }
 .home-left{
 
