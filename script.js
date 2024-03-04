@@ -158,6 +158,7 @@ window.addEventListener("keydown", function (e) {
 
 });
 window.onload = function(){
+    registerSW();
 
 const menu_btn = document.querySelector(".hamburger");
 const mobile_menu = document.querySelector(".mobile-left");
@@ -172,3 +173,21 @@ menu_btn.addEventListener('click',function(){
 })
 }
 document.addEventListener('contextmenu', event => event.preventDefault());
+
+
+
+
+
+  // Register the Service Worker
+  async function registerSW() {
+    if ('serviceWorker' in navigator) {
+      try {
+        await navigator
+              .serviceWorker
+              .register('serviceworker.js');
+      }
+      catch (e) {
+        console.log('SW registration failed');
+      }
+    }
+  }
