@@ -1,9 +1,9 @@
 {
     "name":"MusicbyVivek",
-    "short_name":"MBV",
+    "short_name":"MusicbyVivek",
     "start_url":"index.html",
     "display":"standalone",
-    "background_color":"#5900b3",
+    "background_color":"#000000",
     "theme_color":"black",
     "scope": ".",
     "description":"Developed by vivek kumar",
