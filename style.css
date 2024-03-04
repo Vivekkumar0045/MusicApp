@@ -733,3 +733,31 @@ color: red;
    justify-self: center;
    transform: scale(0.9);
 }
+
+#connect{
+   width: 200px;
+   height: 50px;
+   border-radius: 60px;
+   background-color: red;
+   color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 20px;
+   align-self: center;
+   justify-self: center;
+}
+
+
+#connect-btn{
+   padding-top: 60px;
+   justify-self: center;
+   align-self: center;
+}
+
+#connect-web{
+   text-decoration: none;
+   color: white;
+}
+.album div{
+   margin-left: 6px;
+   margin-bottom: 6px;
+}

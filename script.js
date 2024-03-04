@@ -62,6 +62,11 @@ Array.from(document.getElementsByClassName('album')).forEach((element) => {
 
         masterplay.classList.remove('fa-play');
         masterplay.classList.add('fa-pause');
+
+        document.querySelector(".songinfo").createElement(span);
+        span.id=mname;
+        span.innerHTML="kinni";
+        document.appendChild(span);
     })
 })
 
